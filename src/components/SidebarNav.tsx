@@ -28,8 +28,8 @@ export function SidebarNav() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "flex items-center justify-center h-12 w-12 rounded-lg transition-all duration-300 ease-in-out hover:scale-125 hover:mb-2 hover:bg-primary/10",
-                      isActive ? "text-primary bg-primary/10 scale-125 mb-2" : "text-muted-foreground hover:text-primary"
+                      "flex items-center justify-center h-12 w-12 rounded-lg transition-all duration-300 ease-in-out hover:scale-125 hover:mb-2 hover:text-primary",
+                      isActive ? "text-primary scale-125 mb-2" : "text-muted-foreground"
                     )}
                     prefetch={false}
                   >
