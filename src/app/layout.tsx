@@ -2,7 +2,6 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { SidebarNav } from '@/components/SidebarNav';
-import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
   title: 'Topclues solutions Digital',
@@ -24,7 +23,6 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-background text-foreground min-h-screen flex flex-col overflow-x-hidden">
         <SidebarNav />
         <main className="flex-1 pb-20">{children}</main>
-        <WhatsAppButton phoneNumber="911234567890" />
         <Toaster />
       </body>
     </html>
