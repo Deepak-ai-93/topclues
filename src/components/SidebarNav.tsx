@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Home, Info, Briefcase, Mail, Building2 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -9,7 +10,7 @@ import { cn } from '@/lib/utils';
 const navItems = [
   { href: '/', icon: Home, label: 'Home' },
   { href: '/about', icon: Info, label: 'About' },
-  { href: '/#', icon: Building2, label: 'Topclues solutions' },
+  { href: '/#', icon: 'logo', label: 'Topclues solutions' },
   { href: '/services', icon: Briefcase, label: 'Services' },
   { href: '/contact', icon: Mail, label: 'Contact' },
 ];
@@ -24,6 +25,8 @@ export function SidebarNav() {
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             const isCompanyIcon = item.label === 'Topclues solutions';
+            const IconComponent = item.icon as React.ElementType;
+
 
             if (isCompanyIcon) {
                 return (
@@ -36,8 +39,14 @@ export function SidebarNav() {
                             )}
                             prefetch={false}
                         >
-                            <div className="h-14 w-14 bg-primary rounded-lg flex items-center justify-center">
-                                <item.icon className="h-8 w-8 text-primary-foreground" />
+                            <div className="h-14 w-14 bg-primary rounded-lg flex items-center justify-center p-1">
+                                <Image 
+                                  src="http://topcluessolutions.in/wp-content/uploads/2025/03/cropped-TCS@Logo-02.png"
+                                  alt="Topclues solutions Logo"
+                                  width={56}
+                                  height={56}
+                                  className="object-contain"
+                                />
                             </div>
                             <span className="sr-only">{item.label}</span>
                         </Link>
@@ -60,7 +69,7 @@ export function SidebarNav() {
                     )}
                     prefetch={false}
                   >
-                    <item.icon className="h-7 w-7" />
+                    <IconComponent className="h-7 w-7" />
                     <span className="sr-only">{item.label}</span>
                   </Link>
                 </TooltipTrigger>
