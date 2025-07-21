@@ -4,40 +4,40 @@ import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 const services = [
   {
-    title: "SEO Optimization by Topclues solutions",
-    description: "Based in Junagadh, Topclues solutions elevates your search engine ranking to capture organic traffic. Our strategies are built on comprehensive keyword research and on-page optimization.",
+    title: "Social Media Marketing by Topclues solutions",
+    description: "Based in Junagadh, Topclues solutions elevates your brand's presence across social platforms with engaging content and strategic campaigns that foster community and drive growth.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "search analysis",
+    imageHint: "social media feed",
   },
   {
-    title: "Social Media Marketing with Topclues solutions",
-    description: "Forge a powerful brand presence with Topclues solutions from Junagadh. We develop and execute tailored strategies to engage your audience and foster a loyal community.",
+    title: "Creative Poster Design with Topclues solutions",
+    description: "Our Junagadh-based design team at Topclues solutions creates visually stunning posters that capture attention and communicate your message effectively for events, promotions, and more.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "social engagement",
+    imageHint: "event poster",
   },
   {
-    title: "Content Creation at Topclues solutions",
-    description: "Tell your brand’s story with compelling content from our Junagadh-based Topclues solutions team. We produce content that resonates with your audience and reinforces your authority.",
+    title: "Comprehensive Branding by Topclues solutions",
+    description: "Topclues solutions in Junagadh helps you build a strong, memorable brand identity, from logo design to brand guidelines, ensuring consistency and recognition across all channels.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "creative writing",
+    imageHint: "brand logo",
   },
   {
-    title: "Email Marketing by Topclues solutions",
-    description: "Nurture leads and drive customer loyalty with strategic email campaigns from Topclues solutions in Junagadh. We design, automate, and optimize your email marketing to deliver personalized messages.",
-    imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "email inbox",
-  },
-  {
-    title: "PPC Advertising with Topclues solutions",
-    description: "Achieve instant visibility with Topclues solutions' data-driven PPC campaigns, managed from our Junagadh office. We drive targeted traffic and maximize conversions.",
-    imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "data graph",
-  },
-  {
-    title: "Web Design by Topclues solutions",
+    title: "Web Development at Topclues solutions",
     description: "Your website is your digital storefront. Our Junagadh-based team at Topclues solutions creates beautiful, intuitive, and responsive websites optimized for performance and conversion.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "web layout",
+  },
+  {
+    title: "Eye-Catching Banner Design with Topclues solutions",
+    description: "From our studio in Junagadh, Topclues solutions designs compelling digital and print banners that increase visibility and drive traffic to your campaigns and business.",
+    imageUrl: "https://placehold.co/600x400.png",
+    imageHint: "digital banner",
+  },
+  {
+    title: "Professional Video Editing by Topclues solutions",
+    description: "Our video editing services at Topclues solutions in Junagadh transform raw footage into polished, professional videos that tell your story and captivate your audience.",
+    imageUrl: "https://placehold.co/600x400.png",
+    imageHint: "video production",
   },
 ];
 
