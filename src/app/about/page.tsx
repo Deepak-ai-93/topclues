@@ -6,37 +6,37 @@ const sections = [
   {
     title: "Our Mission at Topclues solutions",
     description: "At Topclues solutions, a Junagadh-based agency, we provide innovative digital marketing solutions that deliver measurable results, empowering our clients to achieve their business goals.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "mission target",
   },
   {
     title: "Our Vision",
     description: "Topclues solutions aims to be the leading digital agency in Junagadh and beyond, recognized for our creativity, strategic expertise, and unwavering commitment to client success.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "vision future",
   },
   {
     title: "Our Values",
     description: "Innovation, integrity, and collaboration are the pillars of our work at Topclues solutions in Junagadh. We believe in transparent communication and a partnership approach.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "values core",
   },
   {
     title: "Meet Our Founder",
     description: "Jane Doe founded Topclues solutions in Junagadh with a passion for helping businesses navigate the complexities of the digital world. Her expertise drives our strategic vision.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "founder portrait",
   },
   {
     title: "A Culture of Excellence",
     description: "We foster a culture of continuous learning and excellence at Topclues solutions. Our Junagadh-based team is composed of passionate strategists, creatives, and technologists.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "team collaboration",
   },
   {
     title: "Community & Growth",
     description: "Topclues solutions is committed to growing alongside our clients and our Junagadh community, contributing positively to the digital ecosystem and fostering sustainable business growth.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "growth chart",
   },
 ];

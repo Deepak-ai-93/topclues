@@ -6,37 +6,37 @@ const services = [
   {
     title: "Social Media Marketing by Topclues solutions",
     description: "Based in Junagadh, Topclues solutions elevates your brand's presence across social platforms with engaging content and strategic campaigns that foster community and drive growth.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "social media feed",
   },
   {
     title: "Creative Poster Design with Topclues solutions",
     description: "Our Junagadh-based design team at Topclues solutions creates visually stunning posters that capture attention and communicate your message effectively for events, promotions, and more.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "event poster",
   },
   {
     title: "Comprehensive Branding by Topclues solutions",
     description: "Topclues solutions in Junagadh helps you build a strong, memorable brand identity, from logo design to brand guidelines, ensuring consistency and recognition across all channels.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "brand logo",
   },
   {
     title: "Web Development at Topclues solutions",
     description: "Your website is your digital storefront. Our Junagadh-based team at Topclues solutions creates beautiful, intuitive, and responsive websites optimized for performance and conversion.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "web layout",
   },
   {
     title: "Eye-Catching Banner Design with Topclues solutions",
     description: "From our studio in Junagadh, Topclues solutions designs compelling digital and print banners that increase visibility and drive traffic to your campaigns and business.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "digital banner",
   },
   {
     title: "Professional Video Editing by Topclues solutions",
     description: "Our video editing services at Topclues solutions in Junagadh transform raw footage into polished, professional videos that tell your story and captivate your audience.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "video production",
   },
 ];

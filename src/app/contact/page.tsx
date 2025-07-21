@@ -7,31 +7,31 @@ const sections = [
   {
     title: "Let's Connect with Topclues solutions",
     description: "We're here to answer your questions and explore how our Junagadh-based company, Topclues solutions, can help your business grow. Reach out to us, and let's start a conversation.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "connection network",
   },
   {
     title: "Project Inquiry at Topclues solutions",
     description: "Have a specific project in mind? Fill out our contact form, and one of our strategists from our Junagadh team at Topclues solutions will get back to you to discuss your vision.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "project blueprint",
   },
   {
     title: "Partnership Opportunities",
     description: "We believe in the power of collaboration. If you're interested in partnering with Topclues solutions, our Junagadh office would love to hear your ideas and explore potential synergies.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "handshake deal",
   },
    {
     title: "Career Inquiries at Topclues solutions",
     description: "Looking to join a team of passionate digital marketing experts in Junagadh? Topclues solutions is always looking for talented individuals to join us. Send us your resume.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "career path",
   },
   {
     title: "Our Location",
     description: "Topclues solutions' office is located in the heart of Junagadh, but we serve clients globally. We are proud of our local roots and focus on delivering results, no matter where you are.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png",
     imageHint: "city map",
   },
 ];
@@ -64,7 +64,7 @@ export default function ContactPage() {
               <SlideIn from="right">
                 <div className="flex justify-center">
                    <Image
-                    src="https://placehold.co/600x400.png"
+                    src="http://topcluessolutions.in/wp-content/uploads/2025/02/img-e1740125173491.png"
                     alt="Contact Us"
                     width={600}
                     height={400}
