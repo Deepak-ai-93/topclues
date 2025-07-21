@@ -79,12 +79,17 @@ export default {
         'pulse-glow': {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.05)'},
-        }
+        },
+        'spin-slow': {
+            '0%': { transform: 'rotate(0deg)' },
+            '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'pulse-glow': 'pulse-glow 2.5s infinite ease-in-out',
+        'pulse-glow': 'pulse-glow 4s infinite ease-in-out',
+        'spin-slow': 'spin-slow 5s linear infinite',
       },
     },
   },

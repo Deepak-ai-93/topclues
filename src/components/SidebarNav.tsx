@@ -32,24 +32,38 @@ export function SidebarNav() {
                 return (
                  <Tooltip key={item.href}>
                     <TooltipTrigger asChild>
-                        <Link
-                            href="/"
-                            className={cn(
-                                "flex items-center justify-center h-16 w-16 rounded-full transition-all duration-300 ease-in-out hover:scale-110 text-primary -mb-1 animate-pulse-glow"
-                            )}
-                            prefetch={false}
-                        >
-                            <div className="h-14 w-14 flex items-center justify-center p-1">
-                                <Image 
-                                  src="http://topcluessolutions.in/wp-content/uploads/2025/03/cropped-TCS@Logo-02.png"
-                                  alt="Topclues solutions Logo"
-                                  width={56}
-                                  height={56}
-                                  className="object-contain"
-                                />
-                            </div>
-                            <span className="sr-only">{item.label}</span>
-                        </Link>
+                        <div className="relative flex items-center justify-center -mb-1">
+                          <svg className="absolute w-20 h-20 animate-spin-slow" viewBox="0 0 100 100">
+                              <circle 
+                                  cx="50" 
+                                  cy="50" 
+                                  r="40" 
+                                  stroke="hsl(48 96% 51%)" 
+                                  strokeWidth="2" 
+                                  fill="none" 
+                                  strokeDasharray="125.6,125.6"
+                                  strokeLinecap="round"
+                              />
+                          </svg>
+                          <Link
+                              href="/"
+                              className={cn(
+                                  "relative flex items-center justify-center h-16 w-16 rounded-full transition-all duration-300 ease-in-out hover:scale-110 text-primary animate-pulse-glow"
+                              )}
+                              prefetch={false}
+                          >
+                              <div className="h-14 w-14 flex items-center justify-center p-1">
+                                  <Image 
+                                    src="http://topcluessolutions.in/wp-content/uploads/2025/03/cropped-TCS@Logo-02.png"
+                                    alt="Topclues solutions Logo"
+                                    width={56}
+                                    height={56}
+                                    className="object-contain"
+                                  />
+                              </div>
+                              <span className="sr-only">{item.label}</span>
+                          </Link>
+                        </div>
                     </TooltipTrigger>
                     <TooltipContent side="top" sideOffset={15}>
                     <p>{item.label}</p>
