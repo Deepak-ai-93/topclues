@@ -19,7 +19,7 @@ export function SidebarNav() {
   return (
     <TooltipProvider delayDuration={0}>
       <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-        <div className="flex items-end justify-center h-16 space-x-2 rounded-2xl bg-background/80 backdrop-blur-sm border p-2 shadow-lg">
+        <div className="flex items-end justify-center h-16 space-x-2 rounded-2xl bg-background/80 backdrop-blur-sm p-2 shadow-lg">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (

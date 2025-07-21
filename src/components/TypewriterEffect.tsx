@@ -8,10 +8,11 @@ type TypewriterEffectProps = {
   className?: string;
 };
 
-export function TypewriterEffect({ text, speed = 100, className }: TypewriterEffectProps) {
+export function TypewriterEffect({ text, speed = 50, className }: TypewriterEffectProps) {
   const [displayedText, setDisplayedText] = useState('');
   
   useEffect(() => {
+    setDisplayedText(''); // Reset on text change
     let i = 0;
     const intervalId = setInterval(() => {
       setDisplayedText(text.slice(0, i + 1));
@@ -24,9 +25,9 @@ export function TypewriterEffect({ text, speed = 100, className }: TypewriterEff
   }, [text, speed]);
 
   return (
-    <span className={className}>
+    <p className={className}>
       {displayedText}
-      <span className="animate-pulse">|</span>
-    </span>
+      <span className="animate-pulse opacity-50">|</span>
+    </p>
   );
 }
