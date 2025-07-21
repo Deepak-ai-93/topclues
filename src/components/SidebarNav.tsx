@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Home, Info, Briefcase, Mail, Building2 } from 'lucide-react';
+import { Home, Info, Briefcase, Mail } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
@@ -39,7 +39,7 @@ export function SidebarNav() {
                             )}
                             prefetch={false}
                         >
-                            <div className="h-14 w-14 bg-primary rounded-lg flex items-center justify-center p-1">
+                            <div className="h-14 w-14 flex items-center justify-center p-1">
                                 <Image 
                                   src="http://topcluessolutions.in/wp-content/uploads/2025/03/cropped-TCS@Logo-02.png"
                                   alt="Topclues solutions Logo"
