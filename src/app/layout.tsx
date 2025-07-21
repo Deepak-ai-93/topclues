@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { SidebarNav } from '@/components/SidebarNav';
 
 export const metadata: Metadata = {
-  title: 'TopClues Digital',
-  description: 'Minimalist website for Topclues Solutions, a social media and digital marketing company.',
+  title: 'Topclues solutions Digital',
+  description: 'Minimalist website for Topclues solutions, a social media and digital marketing company.',
 };
 
 export default function RootLayout({

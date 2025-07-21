@@ -6,38 +6,38 @@ import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 const sections = [
   {
-    title: "Crafting Digital Presence with TopClues",
-    description: "At TopClues, we build compelling brand narratives that resonate with your target audience, establishing a strong and memorable digital footprint.",
+    title: "Crafting Digital Presence with Topclues solutions",
+    description: "At Topclues solutions, we build compelling brand narratives that resonate with your target audience, establishing a strong and memorable digital footprint.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "digital marketing",
   },
   {
-    title: "Strategic SEO Mastery by TopClues",
-    description: "Our data-driven SEO strategies at TopClues enhance your visibility on search engines, driving organic traffic and connecting you with customers actively seeking your solutions.",
+    title: "Strategic SEO Mastery by Topclues solutions",
+    description: "Our data-driven SEO strategies at Topclues solutions enhance your visibility on search engines, driving organic traffic and connecting you with customers actively seeking your solutions.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "seo chart",
   },
   {
-    title: "Engaging Social Media with TopClues",
-    description: "TopClues creates and manages dynamic social media campaigns that foster community, build brand loyalty, and drive engagement across all major platforms.",
+    title: "Engaging Social Media with Topclues solutions",
+    description: "Topclues solutions creates and manages dynamic social media campaigns that foster community, build brand loyalty, and drive engagement across all major platforms.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "social media",
   },
   {
-    title: "High-Impact Content from TopClues",
-    description: "From captivating blog posts to persuasive ad copy, content from TopClues is designed to capture attention and convert interest into action.",
+    title: "High-Impact Content from Topclues solutions",
+    description: "From captivating blog posts to persuasive ad copy, content from Topclues solutions is designed to capture attention and convert interest into action.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "writing content",
   },
   {
-    title: "Precision PPC Campaigns by TopClues",
-    description: "Maximize your ROI with our meticulously managed pay-per-click advertising. TopClues targets, tests, and optimizes for performance.",
+    title: "Precision PPC Campaigns by Topclues solutions",
+    description: "Maximize your ROI with our meticulously managed pay-per-click advertising. Topclues solutions targets, tests, and optimizes for performance.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "advertising target",
   },
   {
-    title: "Web Design & Development at TopClues",
-    description: "TopClues designs and builds beautiful, responsive, and high-performing websites that offer a seamless user experience and drive conversions.",
+    title: "Web Design & Development at Topclues solutions",
+    description: "Topclues solutions designs and builds beautiful, responsive, and high-performing websites that offer a seamless user experience and drive conversions.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "website design",
   },
@@ -52,7 +52,7 @@ export default function Home() {
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
-                  TopClues: Digital Marketing That Drives Results.
+                  Topclues solutions: Digital Marketing That Drives Results.
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
                   We're a full-service digital agency dedicated to helping businesses succeed online.

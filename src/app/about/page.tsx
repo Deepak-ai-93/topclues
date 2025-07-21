@@ -4,38 +4,38 @@ import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 const sections = [
   {
-    title: "Our Mission at TopClues",
-    description: "At TopClues, we provide innovative digital marketing solutions that deliver measurable results, empowering our clients to achieve their business goals in an ever-evolving online landscape.",
+    title: "Our Mission at Topclues solutions",
+    description: "At Topclues solutions, we provide innovative digital marketing solutions that deliver measurable results, empowering our clients to achieve their business goals in an ever-evolving online landscape.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "mission target",
   },
   {
     title: "Our Vision",
-    description: "TopClues aims to be the leading digital agency, recognized for our creativity, strategic expertise, and unwavering commitment to client success and long-term partnership.",
+    description: "Topclues solutions aims to be the leading digital agency, recognized for our creativity, strategic expertise, and unwavering commitment to client success and long-term partnership.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "vision future",
   },
   {
     title: "Our Values",
-    description: "Innovation, integrity, and collaboration are the pillars of our work at TopClues. We believe in transparent communication and a partnership approach to achieve shared success.",
+    description: "Innovation, integrity, and collaboration are the pillars of our work at Topclues solutions. We believe in transparent communication and a partnership approach to achieve shared success.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "values core",
   },
   {
     title: "Meet Our Founder",
-    description: "Jane Doe founded TopClues with a passion for helping businesses navigate the complexities of the digital world. Her expertise drives our strategic vision.",
+    description: "Jane Doe founded Topclues solutions with a passion for helping businesses navigate the complexities of the digital world. Her expertise drives our strategic vision.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "founder portrait",
   },
   {
     title: "A Culture of Excellence",
-    description: "We foster a culture of continuous learning and excellence at TopClues. Our team is composed of passionate strategists, creatives, and technologists dedicated to their craft.",
+    description: "We foster a culture of continuous learning and excellence at Topclues solutions. Our team is composed of passionate strategists, creatives, and technologists dedicated to their craft.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "team collaboration",
   },
   {
     title: "Community & Growth",
-    description: "TopClues is committed to growing alongside our clients and our community, contributing positively to the digital ecosystem and fostering sustainable business growth.",
+    description: "Topclues solutions is committed to growing alongside our clients and our community, contributing positively to the digital ecosystem and fostering sustainable business growth.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "growth chart",
   },
@@ -48,9 +48,9 @@ export default function AboutPage() {
        <section className="w-full min-h-screen flex items-center py-16 md:py-24">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">About TopClues</h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">About Topclues solutions</h1>
               <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
-                We're a passionate team at TopClues, dedicated to crafting digital excellence.
+                We're a passionate team at Topclues solutions, dedicated to crafting digital excellence.
               </p>
             </div>
         </div>

@@ -5,32 +5,32 @@ import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 const sections = [
   {
-    title: "Let's Connect with TopClues",
-    description: "We're here to answer your questions and explore how TopClues can help your business grow. Reach out to us, and let's start a conversation about your digital marketing needs.",
+    title: "Let's Connect with Topclues solutions",
+    description: "We're here to answer your questions and explore how Topclues solutions can help your business grow. Reach out to us, and let's start a conversation about your digital marketing needs.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "connection network",
   },
   {
-    title: "Project Inquiry at TopClues",
-    description: "Have a specific project in mind? Fill out our contact form with the details, and one of our strategists from TopClues will get back to you to discuss your vision and goals.",
+    title: "Project Inquiry at Topclues solutions",
+    description: "Have a specific project in mind? Fill out our contact form with the details, and one of our strategists from Topclues solutions will get back to you to discuss your vision and goals.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "project blueprint",
   },
   {
     title: "Partnership Opportunities",
-    description: "We believe in the power of collaboration. If you're interested in partnering with TopClues, we'd love to hear your ideas and explore potential synergies.",
+    description: "We believe in the power of collaboration. If you're interested in partnering with Topclues solutions, we'd love to hear your ideas and explore potential synergies.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "handshake deal",
   },
    {
-    title: "Career Inquiries at TopClues",
-    description: "Looking to join a team of passionate digital marketing experts? TopClues is always looking for talented individuals to join us. Send us your resume and portfolio.",
+    title: "Career Inquiries at Topclues solutions",
+    description: "Looking to join a team of passionate digital marketing experts? Topclues solutions is always looking for talented individuals to join us. Send us your resume and portfolio.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "career path",
   },
   {
     title: "Our Location",
-    description: "TopClues' office is located in the heart of Business City, but we serve clients globally. We are a remote-first company with a focus on delivering results, no matter where you are.",
+    description: "Topclues solutions' office is located in the heart of Business City, but we serve clients globally. We are a remote-first company with a focus on delivering results, no matter where you are.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "city map",
   },
@@ -42,7 +42,7 @@ export default function ContactPage() {
        <section className="w-full min-h-screen flex items-center py-16 md:py-24">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Get In Touch With TopClues</h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Get In Touch With Topclues solutions</h1>
               <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
                 We'd love to hear from you.
               </p>
