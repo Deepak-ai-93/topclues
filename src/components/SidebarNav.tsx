@@ -35,7 +35,7 @@ export function SidebarNav() {
                         <Link
                             href="/"
                             className={cn(
-                                "flex items-center justify-center h-16 w-16 rounded-lg transition-all duration-300 ease-in-out hover:scale-110 text-primary -mb-1"
+                                "flex items-center justify-center h-16 w-16 rounded-full transition-all duration-300 ease-in-out hover:scale-110 text-primary -mb-1 animate-pulse-glow"
                             )}
                             prefetch={false}
                         >
