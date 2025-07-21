@@ -47,7 +47,7 @@ const sections = [
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="w-full py-20 md:py-32 flex items-center min-h-[calc(100vh-8rem)]">
+      <section className="w-full flex items-center min-h-screen py-16 md:py-24">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
@@ -72,13 +72,13 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 md:px-6 py-16 md:py-24 space-y-24">
+      <div className="container mx-auto px-4 md:px-6">
         {sections.map((section, index) => {
           const isImageLeft = index % 2 === 0;
           const content = (
              <>
               <SlideIn from={isImageLeft ? 'right' : 'left'}>
-                <div>
+                <div className="flex flex-col justify-center">
                   <h2 className="text-2xl font-bold tracking-tight mb-4">{section.title}</h2>
                   <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
                 </div>
@@ -98,9 +98,9 @@ export default function Home() {
             </>
           );
            return (
-            <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
+            <section key={index} className="grid md:grid-cols-2 gap-12 items-center min-h-screen w-full py-16 md:py-24">
               {isImageLeft ? [content.props.children[1], content.props.children[0]] : content}
-            </div>
+            </section>
           )
         })}
       </div>
