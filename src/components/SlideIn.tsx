@@ -42,7 +42,7 @@ export function SlideIn({ children, className, from = 'left', delay = 0 }: Slide
   return (
     <div
       ref={domRef}
-      className={`transition-all duration-1000 ease-out ${
+      className={`transition-all duration-500 ease-out ${
         isVisible ? 'opacity-100 translate-x-0' : `opacity-0 ${transformClasses}`
       } ${className || ''}`}
     >
