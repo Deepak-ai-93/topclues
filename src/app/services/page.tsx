@@ -46,8 +46,8 @@ export default function ServicesPage() {
        <section className="w-full min-h-screen flex items-center justify-center py-16 md:py-24 px-4">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">Our Services at Topclues solutions</h1>
-              <p className="max-w-[600px] text-muted-foreground text-base md:text-lg">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">Our Services at Topclues solutions</h1>
+              <p className="max-w-[600px] text-muted-foreground text-sm md:text-lg">
                 A comprehensive suite of digital marketing solutions from Topclues solutions in Junagadh.
               </p>
             </div>
