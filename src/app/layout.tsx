@@ -1,8 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { Toaster } from "@/components/ui/toaster"
+import { SidebarNav } from '@/components/SidebarNav';
 
 export const metadata: Metadata = {
   title: 'TopClues Digital',
@@ -22,9 +21,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-sans antialiased bg-background text-foreground min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-1 pt-20">{children}</main>
-        <Footer />
+        <SidebarNav />
+        <main className="flex-1 md:ml-20">{children}</main>
         <Toaster />
       </body>
     </html>
