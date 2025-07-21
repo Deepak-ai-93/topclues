@@ -45,14 +45,14 @@ const sections = [
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="w-full flex items-center justify-center min-h-screen py-16 md:py-24">
+      <section className="w-full flex items-center justify-center min-h-screen py-16 md:py-24 px-4">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
                   Topclues solutions: Junagadh's Digital Marketing Experts.
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground text-sm md:text-base">
+                <p className="max-w-[600px] text-muted-foreground text-base md:text-lg">
                   We're a full-service digital agency from Junagadh, dedicated to helping businesses succeed online.
                 </p>
               </div>

@@ -43,11 +43,11 @@ const sections = [
 export default function AboutPage() {
   return (
     <div className="flex flex-col">
-       <section className="w-full min-h-screen flex items-center justify-center py-16 md:py-24">
+       <section className="w-full min-h-screen flex items-center justify-center py-16 md:py-24 px-4">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">About Topclues solutions</h1>
-              <p className="max-w-[600px] text-muted-foreground text-sm md:text-base">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">About Topclues solutions</h1>
+              <p className="max-w-[600px] text-muted-foreground text-base md:text-lg">
                 We're a passionate team from Junagadh, dedicated to crafting digital excellence.
               </p>
             </div>

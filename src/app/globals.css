@@ -59,6 +59,6 @@
     @apply tracking-tight;
   }
   p {
-    @apply text-sm;
+    @apply text-base;
   }
 }
