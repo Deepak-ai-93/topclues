@@ -39,7 +39,7 @@ const sections = [
 export default function ContactPage() {
   return (
     <div className="flex flex-col">
-       <section className="w-full min-h-screen flex items-center py-16 md:py-24">
+       <section className="w-full min-h-screen flex items-center justify-center py-16 md:py-24">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Get In Touch With Topclues solutions</h1>
@@ -53,7 +53,7 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 md:px-6">
             <section className="grid md:grid-cols-2 gap-16 items-center min-h-screen w-full py-16 md:py-24">
               <SlideIn from="left">
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center text-center md:text-left">
                   <h2 className="text-2xl font-bold tracking-tight mb-4">Send Us a Message</h2>
                   <p className="text-muted-foreground text-sm mb-8">
                     Fill out the form below and we will get back to you as soon as possible.
@@ -80,7 +80,7 @@ export default function ContactPage() {
            const content = (
             <>
               <SlideIn from={isImageLeft ? 'right' : 'left'}>
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center text-center md:text-left">
                   <h2 className="text-2xl font-bold tracking-tight mb-4">{section.title}</h2>
                   <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
                 </div>

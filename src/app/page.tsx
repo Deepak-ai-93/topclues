@@ -47,7 +47,7 @@ const sections = [
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="w-full flex items-center min-h-screen py-16 md:py-24">
+      <section className="w-full flex items-center justify-center min-h-screen py-16 md:py-24">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
@@ -78,7 +78,7 @@ export default function Home() {
           const content = (
              <>
               <SlideIn from={isImageLeft ? 'right' : 'left'}>
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center text-center md:text-left">
                   <h2 className="text-2xl font-bold tracking-tight mb-4">{section.title}</h2>
                   <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
                 </div>

@@ -45,7 +45,7 @@ const services = [
 export default function ServicesPage() {
   return (
      <div className="flex flex-col">
-       <section className="w-full min-h-screen flex items-center py-16 md:py-24">
+       <section className="w-full min-h-screen flex items-center justify-center py-16 md:py-24">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Our Services at Topclues solutions</h1>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
           const content = (
             <>
               <SlideIn from={isImageLeft ? 'right' : 'left'}>
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center text-center md:text-left">
                   <h2 className="text-2xl font-bold tracking-tight mb-4">{service.title}</h2>
                   <TypewriterEffect text={service.description} className="text-muted-foreground text-sm" />
                 </div>
