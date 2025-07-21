@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FadeIn } from "@/components/FadeIn";
+import { SlideIn } from "@/components/SlideIn";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 const services = [
@@ -53,25 +53,25 @@ export default function ServicesPage() {
      <div className="flex flex-col">
        <section className="w-full py-20 md:py-32 flex items-center">
         <div className="container px-4 md:px-6">
-          <FadeIn>
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Our Services</h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-lg text-sm">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Our Services</h1>
+              <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
                 A comprehensive suite of digital marketing solutions.
               </p>
             </div>
-          </FadeIn>
         </div>
       </section>
 
       <div className="container mx-auto px-4 md:px-6 py-16 md:py-24 space-y-24">
         {services.map((service, index) => (
-          <FadeIn key={index}>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className={!service.imageLeft ? 'md:order-last' : ''}>
-                <h2 className="text-3xl font-bold tracking-tight mb-4">{service.title}</h2>
+          <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
+             <SlideIn from={!service.imageLeft ? 'right' : 'left'}>
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight mb-4">{service.title}</h2>
                 <TypewriterEffect text={service.description} className="text-muted-foreground text-sm" />
               </div>
+            </SlideIn>
+            <SlideIn from={!service.imageLeft ? 'left' : 'right'}>
               <div className="flex justify-center">
                  <Image
                   src={service.imageUrl}
@@ -82,8 +82,8 @@ export default function ServicesPage() {
                   data-ai-hint={service.imageHint}
                 />
               </div>
-            </div>
-          </FadeIn>
+            </SlideIn>
+          </div>
         ))}
       </div>
     </div>

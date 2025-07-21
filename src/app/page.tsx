@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FadeIn } from "@/components/FadeIn";
+import { SlideIn } from "@/components/SlideIn";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
@@ -55,13 +55,12 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="w-full py-20 md:py-32 flex items-center min-h-[calc(100vh-8rem)]">
         <div className="container px-4 md:px-6">
-          <FadeIn>
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
                   Digital Marketing That Drives Results.
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-lg text-sm">
+                <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
                   We're a full-service digital agency dedicated to helping businesses succeed online.
                 </p>
               </div>
@@ -76,18 +75,19 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </FadeIn>
         </div>
       </section>
 
       <div className="container mx-auto px-4 md:px-6 py-16 md:py-24 space-y-24">
         {sections.map((section, index) => (
-          <FadeIn key={index}>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className={section.imageLeft ? 'md:order-last' : ''}>
-                <h2 className="text-3xl font-bold tracking-tight mb-4">{section.title}</h2>
+           <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
+            <SlideIn from={section.imageLeft ? 'right' : 'left'}>
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight mb-4">{section.title}</h2>
                 <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
               </div>
+            </SlideIn>
+            <SlideIn from={section.imageLeft ? 'left' : 'right'}>
               <div className="flex justify-center">
                 <Image
                   src={section.imageUrl}
@@ -98,8 +98,8 @@ export default function Home() {
                   data-ai-hint={section.imageHint}
                 />
               </div>
-            </div>
-          </FadeIn>
+            </SlideIn>
+          </div>
         ))}
       </div>
     </div>

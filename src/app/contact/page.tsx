@@ -1,5 +1,5 @@
 import { ContactForm } from "@/components/ContactForm";
-import { FadeIn } from "@/components/FadeIn";
+import { SlideIn } from "@/components/SlideIn";
 import Image from "next/image";
 import { TypewriterEffect } from "@/components/TypewriterEffect";
 
@@ -41,47 +41,49 @@ export default function ContactPage() {
     <div className="flex flex-col">
        <section className="w-full py-20 md:py-32 flex items-center">
         <div className="container px-4 md:px-6">
-          <FadeIn>
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Get In Touch</h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-lg text-sm">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Get In Touch</h1>
+              <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
                 We'd love to hear from you.
               </p>
             </div>
-          </FadeIn>
         </div>
       </section>
 
       <div className="container mx-auto px-4 md:px-6 py-16 md:py-24 space-y-24">
-         <FadeIn>
             <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div>
-                <h2 className="text-3xl font-bold tracking-tight mb-4">Send Us a Message</h2>
-                <p className="text-muted-foreground text-sm mb-8">
-                  Fill out the form below and we will get back to you as soon as possible.
-                </p>
-                 <ContactForm />
-              </div>
-              <div className="flex justify-center">
-                 <Image
-                  src="https://placehold.co/600x400.png"
-                  alt="Contact Us"
-                  width={600}
-                  height={400}
-                  className="rounded-lg object-cover"
-                  data-ai-hint="contact form"
-                />
-              </div>
+              <SlideIn from="left">
+                <div>
+                  <h2 className="text-2xl font-bold tracking-tight mb-4">Send Us a Message</h2>
+                  <p className="text-muted-foreground text-sm mb-8">
+                    Fill out the form below and we will get back to you as soon as possible.
+                  </p>
+                   <ContactForm />
+                </div>
+              </SlideIn>
+              <SlideIn from="right">
+                <div className="flex justify-center">
+                   <Image
+                    src="https://placehold.co/600x400.png"
+                    alt="Contact Us"
+                    width={600}
+                    height={400}
+                    className="rounded-lg object-cover"
+                    data-ai-hint="contact form"
+                  />
+                </div>
+              </SlideIn>
             </div>
-          </FadeIn>
 
         {sections.map((section, index) => (
-          <FadeIn key={index}>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className={index % 2 === 0 ? 'md:order-last' : ''}>
-                <h2 className="text-3xl font-bold tracking-tight mb-4">{section.title}</h2>
+          <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
+            <SlideIn from={index % 2 !== 0 ? 'right' : 'left'}>
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight mb-4">{section.title}</h2>
                 <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
               </div>
+            </SlideIn>
+            <SlideIn from={index % 2 !== 0 ? 'left' : 'right'}>
               <div className="flex justify-center">
                 <Image
                   src={section.imageUrl}
@@ -92,8 +94,8 @@ export default function ContactPage() {
                   data-ai-hint={section.imageHint}
                 />
               </div>
-            </div>
-          </FadeIn>
+            </SlideIn>
+          </div>
         ))}
       </div>
     </div>
