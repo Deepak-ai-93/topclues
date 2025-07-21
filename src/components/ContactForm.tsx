@@ -52,7 +52,7 @@ export function ContactForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm">Full Name</FormLabel>
+                <FormLabel className="text-sm md:text-base">Full Name</FormLabel>
                 <FormControl>
                   <Input placeholder="John Doe" {...field} />
                 </FormControl>
@@ -65,7 +65,7 @@ export function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm">Email Address</FormLabel>
+                <FormLabel className="text-sm md:text-base">Email Address</FormLabel>
                 <FormControl>
                   <Input placeholder="john.doe@example.com" {...field} />
                 </FormControl>
@@ -78,7 +78,7 @@ export function ContactForm() {
             name="subject"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm">Subject</FormLabel>
+                <FormLabel className="text-sm md:text-base">Subject</FormLabel>
                 <FormControl>
                   <Input placeholder="Inquiry about SEO services" {...field} />
                 </FormControl>
@@ -91,7 +91,7 @@ export function ContactForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-sm">Message</FormLabel>
+                <FormLabel className="text-sm md:text-base">Message</FormLabel>
                 <FormControl>
                   <Textarea
                     placeholder="Tell us more about your needs..."

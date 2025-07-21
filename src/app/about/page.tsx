@@ -46,8 +46,8 @@ export default function AboutPage() {
        <section className="w-full min-h-screen flex items-center justify-center py-16 md:py-24">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">About Topclues solutions</h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">About Topclues solutions</h1>
+              <p className="max-w-[600px] text-muted-foreground text-sm md:text-base">
                 We're a passionate team from Junagadh, dedicated to crafting digital excellence.
               </p>
             </div>

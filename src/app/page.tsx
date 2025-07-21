@@ -49,10 +49,10 @@ export default function Home() {
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Topclues solutions: Junagadh's Digital Marketing Experts.
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
+                <p className="max-w-[600px] text-muted-foreground text-sm md:text-base">
                   We're a full-service digital agency from Junagadh, dedicated to helping businesses succeed online.
                 </p>
               </div>

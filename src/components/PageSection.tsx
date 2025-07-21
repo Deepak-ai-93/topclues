@@ -31,8 +31,8 @@ export function PageSection({ title, description, imageUrl, imageHint, isImageLe
   const textColumn = (
     <SlideIn key="text" from={isImageLeft ? "right" : "left"}>
       <div className="flex flex-col justify-center text-center md:text-left">
-        <h2 className="text-2xl font-bold tracking-tight mb-4">{title}</h2>
-        <TypewriterEffect text={description} className="text-muted-foreground text-sm" />
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">{title}</h2>
+        <TypewriterEffect text={description} className="text-muted-foreground text-sm md:text-base" />
       </div>
     </SlideIn>
   );
