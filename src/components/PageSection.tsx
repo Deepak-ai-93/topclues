@@ -14,7 +14,7 @@ interface PageSectionProps {
 
 export function PageSection({ title, description, imageUrl, imageHint, isImageLeft }: PageSectionProps) {
   const imageColumn = (
-    <SlideIn from={isImageLeft ? "left" : "right"}>
+    <SlideIn key="image" from={isImageLeft ? "left" : "right"}>
       <div className="flex justify-center">
         <Image
           src={imageUrl}
@@ -29,7 +29,7 @@ export function PageSection({ title, description, imageUrl, imageHint, isImageLe
   );
 
   const textColumn = (
-    <SlideIn from={isImageLeft ? "right" : "left"}>
+    <SlideIn key="text" from={isImageLeft ? "right" : "left"}>
       <div className="flex flex-col justify-center text-center md:text-left">
         <h2 className="text-2xl font-bold tracking-tight mb-4">{title}</h2>
         <TypewriterEffect text={description} className="text-muted-foreground text-sm" />
