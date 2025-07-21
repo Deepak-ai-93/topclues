@@ -1,20 +1,66 @@
-import { Button } from "@/components/ui/button";
-import { TypewriterEffect } from "@/components/TypewriterEffect";
-import Link from "next/link";
+import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
+const sections = [
+  {
+    title: "Crafting Digital Presence",
+    description: "We build compelling brand narratives that resonate with your target audience, establishing a strong and memorable digital footprint.",
+    imageUrl: "https://placehold.co/600x400.png",
+    imageHint: "digital marketing",
+    imageLeft: false,
+  },
+  {
+    title: "Strategic SEO Mastery",
+    description: "Our data-driven SEO strategies enhance your visibility on search engines, driving organic traffic and connecting you with customers actively seeking your solutions.",
+    imageUrl: "https://placehold.co/600x400.png",
+    imageHint: "seo chart",
+    imageLeft: true,
+  },
+  {
+    title: "Engaging Social Media",
+    description: "We create and manage dynamic social media campaigns that foster community, build brand loyalty, and drive engagement across all major platforms.",
+    imageUrl: "https://placehold.co/600x400.png",
+    imageHint: "social media",
+    imageLeft: false,
+  },
+  {
+    title: "High-Impact Content",
+    description: "From captivating blog posts to persuasive ad copy, our content is designed to capture attention and convert interest into action.",
+    imageUrl: "https://placehold.co/600x400.png",
+    imageHint: "writing content",
+    imageLeft: true,
+  },
+  {
+    title: "Precision PPC Campaigns",
+    description: "Maximize your ROI with our meticulously managed pay-per-click advertising. We target, test, and optimize for performance.",
+    imageUrl: "https://placehold.co/600x400.png",
+    imageHint: "advertising target",
+    imageLeft: false,
+  },
+  {
+    title: "Web Design & Development",
+    description: "We design and build beautiful, responsive, and high-performing websites that offer a seamless user experience and drive conversions.",
+    imageUrl: "https://placehold.co/600x400.png",
+    imageHint: "website design",
+    imageLeft: true,
+  },
+];
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-[calc(100vh-8rem)]">
-      <section className="w-full py-20 md:py-32 lg:py-40 xl:py-56 flex-1 flex items-center">
+    <div className="flex flex-col">
+      <section className="w-full py-20 md:py-32 flex items-center min-h-[calc(100vh-8rem)]">
         <div className="container px-4 md:px-6">
           <FadeIn>
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
-                  <TypewriterEffect text="Digital Marketing That Drives Results." />
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  Digital Marketing That Drives Results.
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-lg">
+                <p className="max-w-[600px] text-muted-foreground md:text-lg text-sm">
                   We're a full-service digital agency dedicated to helping businesses succeed online.
                 </p>
               </div>
@@ -32,6 +78,29 @@ export default function Home() {
           </FadeIn>
         </div>
       </section>
+
+      <div className="container mx-auto px-4 md:px-6 py-16 md:py-24 space-y-24">
+        {sections.map((section, index) => (
+          <FadeIn key={index}>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className={section.imageLeft ? 'md:order-last' : ''}>
+                <h2 className="text-3xl font-bold tracking-tight mb-4">{section.title}</h2>
+                <p className="text-muted-foreground text-sm">{section.description}</p>
+              </div>
+              <div className="flex justify-center">
+                <Image
+                  src={section.imageUrl}
+                  alt={section.title}
+                  width={600}
+                  height={400}
+                  className="rounded-lg object-cover"
+                  data-ai-hint={section.imageHint}
+                />
+              </div>
+            </div>
+          </FadeIn>
+        ))}
+      </div>
     </div>
   );
 }
