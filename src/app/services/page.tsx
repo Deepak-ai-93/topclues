@@ -1,6 +1,4 @@
-import Image from "next/image";
-import { SlideIn } from "@/components/SlideIn";
-import { TypewriterEffect } from "@/components/TypewriterEffect";
+import { PageSection } from "@/components/PageSection";
 
 const services = [
   {
@@ -57,36 +55,16 @@ export default function ServicesPage() {
       </section>
 
       <div className="container mx-auto px-4 md:px-6">
-        {services.map((service, index) => {
-          const isImageLeft = index % 2 === 0;
-          const content = (
-            <>
-              <SlideIn from={isImageLeft ? 'right' : 'left'}>
-                <div className="flex flex-col justify-center text-center md:text-left">
-                  <h2 className="text-2xl font-bold tracking-tight mb-4">{service.title}</h2>
-                  <TypewriterEffect text={service.description} className="text-muted-foreground text-sm" />
-                </div>
-              </SlideIn>
-              <SlideIn from={isImageLeft ? 'left' : 'right'}>
-                <div className="flex justify-center">
-                   <Image
-                    src={service.imageUrl}
-                    alt={service.title}
-                    width={600}
-                    height={400}
-                    className="rounded-lg object-cover"
-                    data-ai-hint={service.imageHint}
-                  />
-                </div>
-              </SlideIn>
-            </>
-          );
-          return (
-            <section key={index} className="grid md:grid-cols-2 gap-12 items-center min-h-screen w-full py-16 md:py-24">
-              {isImageLeft ? [content.props.children[1], content.props.children[0]] : content}
-            </section>
-          )
-        })}
+        {services.map((service, index) => (
+          <PageSection
+            key={index}
+            title={service.title}
+            description={service.description}
+            imageUrl={service.imageUrl}
+            imageHint={service.imageHint}
+            isImageLeft={index % 2 === 0}
+          />
+        ))}
       </div>
     </div>
   );

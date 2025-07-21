@@ -1,8 +1,6 @@
-import Image from "next/image";
-import { SlideIn } from "@/components/SlideIn";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { TypewriterEffect } from "@/components/TypewriterEffect";
+import { PageSection } from "@/components/PageSection";
 
 const sections = [
   {
@@ -73,36 +71,16 @@ export default function Home() {
       </section>
 
       <div className="container mx-auto px-4 md:px-6">
-        {sections.map((section, index) => {
-          const isImageLeft = index % 2 === 0;
-          const content = (
-             <>
-              <SlideIn from={isImageLeft ? 'right' : 'left'}>
-                <div className="flex flex-col justify-center text-center md:text-left">
-                  <h2 className="text-2xl font-bold tracking-tight mb-4">{section.title}</h2>
-                  <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
-                </div>
-              </SlideIn>
-              <SlideIn from={isImageLeft ? 'left' : 'right'}>
-                <div className="flex justify-center">
-                  <Image
-                    src={section.imageUrl}
-                    alt={section.title}
-                    width={600}
-                    height={400}
-                    className="rounded-lg object-cover"
-                    data-ai-hint={section.imageHint}
-                  />
-                </div>
-              </SlideIn>
-            </>
-          );
-           return (
-            <section key={index} className="grid md:grid-cols-2 gap-12 items-center min-h-screen w-full py-16 md:py-24">
-              {isImageLeft ? [content.props.children[1], content.props.children[0]] : content}
-            </section>
-          )
-        })}
+        {sections.map((section, index) => (
+          <PageSection
+            key={index}
+            title={section.title}
+            description={section.description}
+            imageUrl={section.imageUrl}
+            imageHint={section.imageHint}
+            isImageLeft={index % 2 === 0}
+          />
+        ))}
       </div>
     </div>
   );
