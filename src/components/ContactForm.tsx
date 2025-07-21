@@ -41,12 +41,13 @@ export function ContactForm() {
     toast({
       title: "Message Sent!",
       description: "Thank you for contacting us. We will get back to you shortly.",
+      variant: "default",
     });
     form.reset();
   }
 
   return (
-    <Card className="shadow-lg">
+    <Card className="shadow-lg border-2 bg-card">
       <CardHeader>
         <CardTitle>Send us a Message</CardTitle>
         <CardDescription>We'll reply within 24 hours.</CardDescription>
