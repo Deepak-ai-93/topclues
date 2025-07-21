@@ -31,14 +31,14 @@ export function PageSection({ title, description, imageUrl, imageHint, isImageLe
   const textColumn = (
     <SlideIn key="text" from={isImageLeft ? "right" : "left"}>
       <div className="flex flex-col justify-center text-center md:text-left">
-        <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-4">{title}</h2>
-        <TypewriterEffect text={description} className="text-muted-foreground text-base md:text-lg" />
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">{title}</h2>
+        <TypewriterEffect text={description} className="text-muted-foreground text-sm md:text-base" />
       </div>
     </SlideIn>
   );
 
   return (
-    <section className="grid md:grid-cols-2 gap-8 md:gap-16 items-center min-h-screen w-full py-16 md:py-24">
+    <section className="grid md:grid-cols-2 gap-8 md:gap-16 items-center w-full py-16 md:py-24">
       {isImageLeft ? [imageColumn, textColumn] : [textColumn, imageColumn]}
     </section>
   );

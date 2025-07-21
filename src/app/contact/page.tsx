@@ -39,11 +39,11 @@ const sections = [
 export default function ContactPage() {
   return (
     <div className="flex flex-col">
-       <section className="w-full min-h-screen flex items-center justify-center py-16 md:py-24 px-4">
+       <section className="w-full min-h-[80vh] flex items-center justify-center py-16 md:py-24 px-4">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">Get In Touch With Topclues solutions</h1>
-              <p className="max-w-[600px] text-muted-foreground text-sm md:text-lg">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">Get In Touch With Topclues solutions</h1>
+              <p className="max-w-[600px] text-muted-foreground text-sm sm:text-base md:text-lg">
                 We'd love to hear from you. Our team in Junagadh is ready to help.
               </p>
             </div>
@@ -51,11 +51,11 @@ export default function ContactPage() {
       </section>
 
       <div className="container mx-auto px-4 md:px-6">
-            <section className="grid md:grid-cols-2 gap-8 md:gap-16 items-center min-h-screen w-full py-16 md:py-24">
+            <section className="grid md:grid-cols-2 gap-8 md:gap-16 items-center w-full py-16 md:py-24">
               <SlideIn key="form-text" from="left">
                 <div className="flex flex-col justify-center text-center md:text-left">
-                  <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Send Us a Message</h2>
-                  <p className="text-muted-foreground text-base md:text-lg mb-8">
+                  <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">Send Us a Message</h2>
+                  <p className="text-muted-foreground text-sm md:text-base mb-8">
                     Fill out the form below and we will get back to you as soon as possible.
                   </p>
                    <ContactForm />
