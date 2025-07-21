@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 const sections = [
   {
@@ -85,7 +86,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className={section.imageLeft ? 'md:order-last' : ''}>
                 <h2 className="text-3xl font-bold tracking-tight mb-4">{section.title}</h2>
-                <p className="text-muted-foreground text-sm">{section.description}</p>
+                <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
               </div>
               <div className="flex justify-center">
                 <Image

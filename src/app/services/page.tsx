@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
+import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 const services = [
   {
@@ -69,7 +70,7 @@ export default function ServicesPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className={!service.imageLeft ? 'md:order-last' : ''}>
                 <h2 className="text-3xl font-bold tracking-tight mb-4">{service.title}</h2>
-                <p className="text-muted-foreground text-sm">{service.description}</p>
+                <TypewriterEffect text={service.description} className="text-muted-foreground text-sm" />
               </div>
               <div className="flex justify-center">
                  <Image
