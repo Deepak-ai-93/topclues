@@ -18,8 +18,8 @@ export function SidebarNav() {
 
   return (
     <TooltipProvider delayDuration={0}>
-      <nav className="fixed bottom-0 left-0 z-50 w-full bg-background/80 backdrop-blur-sm border-t md:border-t-0 md:border-r md:w-20 md:h-screen md:bottom-auto">
-        <div className="flex justify-around items-center h-full md:flex-col md:justify-center">
+      <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
+        <div className="flex items-end justify-center h-16 space-x-2 rounded-2xl bg-background/80 backdrop-blur-sm border p-2 shadow-lg">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -28,16 +28,16 @@ export function SidebarNav() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "flex items-center justify-center h-16 w-full md:h-20 md:w-20 transition-colors duration-200",
-                      isActive ? "text-primary bg-primary/10" : "text-muted-foreground hover:text-primary hover:bg-primary/5"
+                      "flex items-center justify-center h-12 w-12 rounded-lg transition-all duration-300 ease-in-out hover:scale-125 hover:mb-2 hover:bg-primary/10",
+                      isActive ? "text-primary bg-primary/10 scale-125 mb-2" : "text-muted-foreground hover:text-primary"
                     )}
                     prefetch={false}
                   >
-                    <item.icon className="h-6 w-6" />
+                    <item.icon className="h-7 w-7" />
                     <span className="sr-only">{item.label}</span>
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent side="right" sideOffset={10}>
+                <TooltipContent side="top" sideOffset={15}>
                   <p>{item.label}</p>
                 </TooltipContent>
               </Tooltip>

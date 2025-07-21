@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-background text-foreground min-h-screen flex flex-col">
         <SidebarNav />
-        <main className="flex-1 md:ml-20">{children}</main>
+        <main className="flex-1 pb-20">{children}</main>
         <WhatsAppButton phoneNumber="911234567890" />
         <Toaster />
       </body>
