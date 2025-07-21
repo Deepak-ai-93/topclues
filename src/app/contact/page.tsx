@@ -5,14 +5,14 @@ import { TypewriterEffect } from "@/components/TypewriterEffect";
 
 const sections = [
   {
-    title: "Let's Connect",
-    description: "We're here to answer your questions and explore how we can help your business grow. Reach out to us, and let's start a conversation about your digital marketing needs.",
+    title: "Let's Connect with TopClues",
+    description: "We're here to answer your questions and explore how TopClues can help your business grow. Reach out to us, and let's start a conversation about your digital marketing needs.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "connection network",
   },
   {
-    title: "Project Inquiry",
-    description: "Have a specific project in mind? Fill out our contact form with the details, and one of our strategists will get back to you to discuss your vision and goals.",
+    title: "Project Inquiry at TopClues",
+    description: "Have a specific project in mind? Fill out our contact form with the details, and one of our strategists from TopClues will get back to you to discuss your vision and goals.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "project blueprint",
   },
@@ -23,14 +23,14 @@ const sections = [
     imageHint: "handshake deal",
   },
    {
-    title: "Career Inquiries",
-    description: "Looking to join a team of passionate digital marketing experts? We are always looking for talented individuals to join us. Send us your resume and portfolio.",
+    title: "Career Inquiries at TopClues",
+    description: "Looking to join a team of passionate digital marketing experts? TopClues is always looking for talented individuals to join us. Send us your resume and portfolio.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "career path",
   },
   {
     title: "Our Location",
-    description: "Our office is located in the heart of Business City, but we serve clients globally. We are a remote-first company with a focus on delivering results, no matter where you are.",
+    description: "TopClues' office is located in the heart of Business City, but we serve clients globally. We are a remote-first company with a focus on delivering results, no matter where you are.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "city map",
   },
@@ -42,7 +42,7 @@ export default function ContactPage() {
        <section className="w-full py-20 md:py-32 flex items-center">
         <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Get In Touch</h1>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">Get In Touch With TopClues</h1>
               <p className="max-w-[600px] text-muted-foreground md:text-md text-sm">
                 We'd love to hear from you.
               </p>
@@ -75,28 +75,36 @@ export default function ContactPage() {
               </SlideIn>
             </div>
 
-        {sections.map((section, index) => (
-          <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
-            <SlideIn from={index % 2 !== 0 ? 'right' : 'left'}>
-              <div>
-                <h2 className="text-2xl font-bold tracking-tight mb-4">{section.title}</h2>
-                <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
-              </div>
-            </SlideIn>
-            <SlideIn from={index % 2 !== 0 ? 'left' : 'right'}>
-              <div className="flex justify-center">
-                <Image
-                  src={section.imageUrl}
-                  alt={section.title}
-                  width={600}
-                  height={400}
-                  className="rounded-lg object-cover"
-                  data-ai-hint={section.imageHint}
-                />
-              </div>
-            </SlideIn>
-          </div>
-        ))}
+        {sections.map((section, index) => {
+          const isImageLeft = index % 2 === 0;
+           const content = (
+            <>
+              <SlideIn from={isImageLeft ? 'right' : 'left'}>
+                <div>
+                  <h2 className="text-2xl font-bold tracking-tight mb-4">{section.title}</h2>
+                  <TypewriterEffect text={section.description} className="text-muted-foreground text-sm" />
+                </div>
+              </SlideIn>
+              <SlideIn from={isImageLeft ? 'left' : 'right'}>
+                <div className="flex justify-center">
+                  <Image
+                    src={section.imageUrl}
+                    alt={section.title}
+                    width={600}
+                    height={400}
+                    className="rounded-lg object-cover"
+                    data-ai-hint={section.imageHint}
+                  />
+                </div>
+              </SlideIn>
+            </>
+          );
+          return (
+            <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
+               {isImageLeft ? [content.props.children[1], content.props.children[0]] : content}
+            </div>
+          )
+        })}
       </div>
     </div>
   );
